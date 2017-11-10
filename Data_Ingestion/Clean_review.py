@@ -5,12 +5,12 @@ import pandas as pd
 # 2> change the path for output file
 # I choose 6 cities: boston, chicago, LA, NY, SF, seattle
 
-c1 = pd.read_csv(‘your review cvs file path 1’)
-c2 = pd.read_csv('your review cvs file path 2’)
-c3 = pd.read_csv('your review cvs file path 3’)
-c4 = pd.read_csv('your review cvs file path 4’)
-c5 = pd.read_csv('your review cvs file path 5’)
-c6 = pd.read_csv('your review cvs file path 6’)
+c1 = pd.read_csv('your review cvs file path 1')
+c2 = pd.read_csv('your review cvs file path 2')
+c3 = pd.read_csv('your review cvs file path 3')
+c4 = pd.read_csv('your review cvs file path 4')
+c5 = pd.read_csv('your review cvs file path 5')
+c6 = pd.read_csv('your review cvs file path 6')
 
 
 def change_column(df):
@@ -30,4 +30,4 @@ if __name__ == '__main__':
 
 	combined = pd.concat([boston, chicago, los_angeles, new_york, san_fran, seattle],join='outer')
 	result = combined.sort_values(by=["date"])
-	result.to_csv(‘your output file path/xxx.csv’,index=False,header=False)
+	result.to_csv('your output file path/xxx.csv',index=False,header=False)
