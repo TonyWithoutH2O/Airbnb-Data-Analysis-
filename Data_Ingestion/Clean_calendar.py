@@ -9,12 +9,12 @@ import pandas as pd
 # The output file is 910MB, should take more than 5 minutes to wait.
 
 try:
-	c1 = pd.read_csv('your cvs file 1’)
-	c2 = pd.read_csv('your cvs file 2’)
-	c3 = pd.read_csv('your cvs file 3’)
-	c4 = pd.read_csv('your cvs file 4’)
-	c5 = pd.read_csv('your cvs file 5’)
-	c6 = pd.read_csv('your cvs file 6’)
+	c1 = pd.read_csv('your cvs file 1')
+	c2 = pd.read_csv('your cvs file 2')
+	c3 = pd.read_csv('your cvs file 3')
+	c4 = pd.read_csv('your cvs file 4')
+	c5 = pd.read_csv('your cvs file 5')
+	c6 = pd.read_csv('your cvs file 6')
 
 except IOError:
         print("Wrong file or file path")
@@ -40,4 +40,4 @@ if __name__ == '__main__':
 
 	combined = pd.concat([boston, chicago, los_angeles, new_york, san_fran, seattle])
 	result = combined.sort_values(by=["date"])
-	result.to_csv(‘output path/xxx.csv’,index=False,header=False)
+	result.to_csv('output path/xxx.csv',index=False,header=False)
